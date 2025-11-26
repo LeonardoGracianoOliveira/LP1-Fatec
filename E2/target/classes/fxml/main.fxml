@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.MainController">
+    <top>
+        <HBox spacing="10" padding="10">
+            <Label text="Classe:"/>
+            <ComboBox fx:id="cbClass" prefWidth="150"/>
+            <Label fx:id="lblStatus" text="Status" HBox.hgrow="ALWAYS"/>
+            <Button fx:id="btnRefresh" text="Refresh"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="10" padding="10">
+            <GridPane hgap="10" vgap="10">
+                <Label text="Campo 1:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="tf1" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label text="Campo 2:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="tf2" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <Label text="Campo 3:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="tf3" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            </GridPane>
+            <HBox spacing="10">
+                <Button fx:id="btnCreate" text="Criar"/>
+                <Button fx:id="btnUpdate" text="Atualizar"/>
+                <Button fx:id="btnDelete" text="Deletar"/>
+                <Button fx:id="btnClear" text="Limpar"/>
+            </HBox>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox spacing="5" padding="10">
+            <TableView fx:id="table" prefHeight="250">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" prefWidth="60"/>
+                    <TableColumn fx:id="colA" text="Atributo 1" prefWidth="200"/>
+                    <TableColumn fx:id="colB" text="Atributo 2" prefWidth="200"/>
+                    <TableColumn fx:id="colC" text="Atributo 3" prefWidth="120"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </bottom>
+</BorderPane>

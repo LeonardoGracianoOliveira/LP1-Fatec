@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS javafx_crud;
+USE javafx_crud;
+
+CREATE TABLE IF NOT EXISTS alien (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  planetaDeOrigem VARCHAR(255),
+  dna INT
+);
+
+CREATE TABLE IF NOT EXISTS relogio (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  modelo VARCHAR(255) NOT NULL,
+  cor VARCHAR(255),
+  versao INT
+);
+
+CREATE TABLE IF NOT EXISTS portador (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  aparencia VARCHAR(255),
+  idade INT
+);
