@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<TabPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         fx:controller="org.example.TelaController" prefWidth="800" prefHeight="500">
+
+    <tabs>
+
+        <!-- PORTADOR -->
+        <Tab text="Portador">
+            <content>
+                <BorderPane>
+                    <top>
+                        <Label text="CRUD - Portador" style="-fx-font-size:16px; -fx-padding:10;" />
+                    </top>
+                    <center>
+                        <VBox spacing="8">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
+
+                            <HBox spacing="8">
+                                <VBox>
+                                    <Label text="Nome"/>
+                                    <TextField fx:id="pNome"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Descrição"/>
+                                    <TextField fx:id="pDescricao"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Idade"/>
+                                    <TextField fx:id="pIdade"/>
+                                </VBox>
+                            </HBox>
+
+                            <HBox spacing="8">
+                                <Button text="Cadastrar" onAction="#onCreatePortador"/>
+                                <Button text="Atualizar" onAction="#onUpdatePortador"/>
+                                <Button text="Excluir" onAction="#onDeletePortador"/>
+                                <Button text="Limpar" onAction="#onClearPortador"/>
+                            </HBox>
+
+                            <TableView fx:id="pTable" prefHeight="300">
+                                <columns>
+                                    <TableColumn text="Nome" fx:id="pColNome"/>
+                                    <TableColumn text="Descrição" fx:id="pColDescricao"/>
+                                    <TableColumn text="Idade" fx:id="pColIdade"/>
+                                </columns>
+                            </TableView>
+                        </VBox>
+                    </center>
+                </BorderPane>
+            </content>
+        </Tab>
+
+        <!-- ALIEN -->
+        <Tab text="Alien">
+            <content>
+                <BorderPane>
+                    <top>
+                        <Label text="CRUD - Alien" style="-fx-font-size:16px; -fx-padding:10;" />
+                    </top>
+                    <center>
+                        <VBox spacing="8">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
+
+                            <HBox spacing="8">
+                                <VBox>
+                                    <Label text="Raça"/>
+                                    <TextField fx:id="aRaca"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Nome"/>
+                                    <TextField fx:id="aNome"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="DNA"/>
+                                    <TextField fx:id="aDna"/>
+                                </VBox>
+                            </HBox>
+
+                            <HBox spacing="8">
+                                <Button text="Cadastrar" onAction="#onCreateAlien"/>
+                                <Button text="Atualizar" onAction="#onUpdateAlien"/>
+                                <Button text="Excluir" onAction="#onDeleteAlien"/>
+                                <Button text="Limpar" onAction="#onClearAlien"/>
+                            </HBox>
+
+                            <TableView fx:id="aTable" prefHeight="300">
+                                <columns>
+                                    <TableColumn text="Raça" fx:id="aColRaca"/>
+                                    <TableColumn text="Nome" fx:id="aColNome"/>
+                                    <TableColumn text="DNA" fx:id="aColDna"/>
+                                </columns>
+                            </TableView>
+                        </VBox>
+                    </center>
+                </BorderPane>
+            </content>
+        </Tab>
+
+        <!-- RELOGIO -->
+        <Tab text="Relógio">
+            <content>
+                <BorderPane>
+                    <top>
+                        <Label text="CRUD - Relógio" style="-fx-font-size:16px; -fx-padding:10;" />
+                    </top>
+                    <center>
+                        <VBox spacing="8">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
+
+                            <HBox spacing="8">
+                                <VBox>
+                                    <Label text="Cor"/>
+                                    <TextField fx:id="rCor"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Nome"/>
+                                    <TextField fx:id="rNome"/>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Versão"/>
+                                    <TextField fx:id="rVersao"/>
+                                </VBox>
+                            </HBox>
+
+                            <HBox spacing="8">
+                                <Button text="Cadastrar" onAction="#onCreateRelogio"/>
+                                <Button text="Atualizar" onAction="#onUpdateRelogio"/>
+                                <Button text="Excluir" onAction="#onDeleteRelogio"/>
+                                <Button text="Limpar" onAction="#onClearRelogio"/>
+                            </HBox>
+
+                            <TableView fx:id="rTable" prefHeight="300">
+                                <columns>
+                                    <TableColumn text="Cor" fx:id="rColCor"/>
+                                    <TableColumn text="Nome" fx:id="rColNome"/>
+                                    <TableColumn text="Versão" fx:id="rColVersao"/>
+                                </columns>
+                            </TableView>
+                        </VBox>
+                    </center>
+                </BorderPane>
+            </content>
+        </Tab>
+
+    </tabs>
+</TabPane>

@@ -1,0 +1,10 @@
+org\example\Relogio.class
+org\example\Alien.class
+org\example\Main.class
+org\example\Portador.class
+org\example\RelogioRepository.class
+org\example\TelaController.class
+org\example\Database.class
+org\example\PortadorRepository.class
+org\example\App.class
+org\example\AlienRepository.class
